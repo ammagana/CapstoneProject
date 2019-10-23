@@ -1,0 +1,59 @@
+﻿@page
+@model OrderCookDeliver.Pages.MenuModel
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Menu</h1>
+
+<table class="table">
+    <thead>
+        @for (int i = 0; i <= 3; i++)
+        {
+            @if (i == 0)
+            {
+                <tr>
+                    <th>Oct 28, Monday</th>
+                </tr>
+                <tr>
+                    <td><a href="">Noodles with buck choy and edamame</a></td>
+                    <td><a href="">Second Meal</a></td>
+                </tr>
+            }
+            @if (i == 0)
+            {
+                <tr>
+                    <th>Oct 29,  Tuesday</th> <!--Perfered-->
+                </tr>
+                <tr>
+                    <td><a href="">Noodles with buck choy and edamame</a></td>
+                    <td><a href="">Second Meal</a></td>
+                </tr>
+            }
+            @if (i == 0)
+            {
+                <tr>
+                    <th>Oct 30, Wednesday</th>
+
+                </tr>
+                <tr>
+                    <td><a href="">Noodles with buck choy and edamame</a></td>
+                    <td><a href="">Second Meal</a></td>
+                </tr>
+            }
+            @if (i == 0)
+            {
+                <tr>
+                    <th>Oct 31, Thursday</th> 
+                </tr>
+                <tr>
+                    <td><a href="">Noodles with buck choy and edamame</a></td>
+                    <td><a href="">Second Meal</a></td>
+                </tr>
+            }
+        }
+    </thead>
+
+</table>
+
+
