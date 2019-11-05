@@ -1,0 +1,86 @@
+﻿@page
+@model OrderCookDeliver.Pages.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+<div class="container marginTop">
+
+    <div class="row">
+
+        <div class="card">
+
+            <div class="text-center view overlay hm-white-slight">
+
+                <img src="~/img/noodles.jpg" class="img-fluid" alt="">
+
+                <a href="#">
+
+                    <div class="mask waves-effect waves-light"></div>
+
+                </a>
+
+            </div>
+            
+            <div class="card-block">
+
+                <!--Title-->
+
+                <h4 class="card-title">@Model.Name</h4>
+
+                <!--Text-->
+
+                <p class="card-text">@Model.Description.</p>
+
+                <p class="card-text">@Model.Ingredients</p>
+                <section class="o-Ingredients">
+                    <header class="o-Ingredients__m-Header">
+                        <div class="o-Ingredients__m-TextWrap">
+                            <h3 class="o-Ingredients__a-HeadLine">
+                                <span class="o-Ingredients__a-HeadLineText">Ingredients
+                                </span>
+                            </h3>
+                        </div>
+                    </header>
+                    <div class="o-Ingredients__m-Body">
+                        <p class="o-Ingredients__a-Ingredient">
+                            2 Whole free-range, organic chickens
+                        </p>
+                    </div>
+                </section>
+
+                  <div>  <select id="select1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>  Servings</div>
+                <p></p>
+                <p class="btn btn-group pull-right">
+
+                    <a href="Menu" class="btn btn-default">Show all Meals</a>
+
+                    <a href="ShoppingCart"class="btn btn-default" id="cartButton" asp-action="AddToShoppingCart" asp-route-mealId="@Model.MealID">
+
+                        Add to cart
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
