@@ -19,6 +19,7 @@ namespace OrderCookDeliver.Pages
         public string NutrientFacts { get; set; }
         public void OnGet()
         {
+            ImageURL = "noodles.jpg";
             Name = "Crispy Fried Chicken";
             Description = " Forget Noodles with buck choy and edamame, fried chicken is what's up. It's thinner than skin-on, bone-in fried chicken, which means the ratio of breading to meat is higher. In other words, it's crispy AF";
         }
