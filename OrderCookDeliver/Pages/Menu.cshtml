@@ -4,56 +4,119 @@
     ViewData["Title"] = "Menu";
 }
 
-<h1>Menu</h1>
+@{
+    //get current week
+    DateTime week = DateTime.Today.AddDays(-1 * (int)(DateTime.Today.DayOfWeek));
+    string month = "Jan";
+    int day = Convert.ToInt32(week.Day);
 
-<table class="table">
-    <thead>
-        @for (int i = 0; i <= 3; i++)
-        {
-            @if (i == 0)
-            {
-                <tr>
-                    <th>Oct 28, Monday</th>
-                </tr>
-                <tr>
-                    <td><a href="">Noodles with buck choy and edamame</a></td>
-                    <td><a href="">Second Meal</a></td>
-                </tr>
-            }
-            @if (i == 0)
-            {
-                <tr>
-                    <th>Oct 29,  Tuesday</th> <!--Perfered-->
-                </tr>
-                <tr>
-                    <td><a href="">Noodles with buck choy and edamame</a></td>
-                    <td><a href="">Second Meal</a></td>
-                </tr>
-            }
-            @if (i == 0)
-            {
-                <tr>
-                    <th>Oct 30, Wednesday</th>
+    //determine the current month
+    switch (week.Month)
+    {
+        case 1:
+            month = "Jan";
+            break;
+        case 2:
+            month = "Feb";
+            break;
+        case 3:
+            month = "Mar";
+            break;
+        case 4:
+            month = "Apr";
+            break;
+        case 5:
+            month = "May";
+            break;
+        case 6:
+            month = "Jun";
+            break;
+        case 7:
+            month = "Jul";
+            break;
+        case 8:
+            month = "Aug";
+            break;
+        case 9:
+            month = "Sep";
+            break;
+        case 10:
+            month = "Oct";
+            break;
+        case 11:
+            month = "Nov";
+            break;
+        case 12:
+            month = "Dec";
+            break;
+    }
+}
 
-                </tr>
-                <tr>
-                    <td><a href="">Noodles with buck choy and edamame</a></td>
-                    <td><a href="">Second Meal</a></td>
-                </tr>
-            }
-            @if (i == 0)
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Menu</h1>
+            <h4>Current menu for the week</h4>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            @for (int i = 1; i <= 4; i++)
             {
-                <tr>
-                    <th>Oct 31, Thursday</th> 
-                </tr>
-                <tr>
-                    <td><a href="">Noodles with buck choy and edamame</a></td>
-                    <td><a href="">Second Meal</a></td>
-                </tr>
+
+                int currentDay = day + i;
+                DateTime dayWeek = week.AddDays(i);
+                <h3>@month @currentDay, @dayWeek.DayOfWeek</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="~/img/noodles.jpg" alt="noodles" />
+                            <div class="card-body">
+                                <p class="card-text">Buckwheat Asian soba noodles in a spicy garlic chili sauce with sautéed bok choy and edamame.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        @if (currentDay > DateTime.Today.Day)
+                                        {
+                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                                        }
+                                        @if (currentDay <= DateTime.Today.Day)
+                                        {
+                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
+                                        }
+                                    </div>
+                                    <small class="text-muted">option 1</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="~/img/noodles.jpg" alt="noodles" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        @if (currentDay > DateTime.Today.Day)
+                                        {
+                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" id="details">Details</button>
+                                        }
+                                        @if (currentDay <= DateTime.Today.Day)
+                                        {
+                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
+                                        }
+                                    </div>
+                                    <small class="text-muted">option 2</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             }
-        }
-    </thead>
+        </div>
+    </div>
 
-</table>
-
+</main>
 
