@@ -59,8 +59,15 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    /*margin-bottom: 60px;
+      background-image: url('\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\wwwroot\img\homePageBackGroundImage.jpg');
+    */
+    background-image: url('homePageBackGroundImage.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    height: 1197px;
 }
 .footer {
   position: absolute;
