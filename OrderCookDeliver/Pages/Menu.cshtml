@@ -72,19 +72,21 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="~/img/noodles.jpg" alt="noodles" />
+                            <img src="~/img/edamame_noodles.jpg" alt="noodles" />
                             <div class="card-body">
                                 <p class="card-text">Buckwheat Asian soba noodles in a spicy garlic chili sauce with sautéed bok choy and edamame.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         @if (currentDay > DateTime.Today.Day)
                                         {
-                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                                            
+                                            <a href="Detail" class="btn btn-sm btn-outline-secondary">Details</a>
+                                           
                                         }
                                         @if (currentDay <= DateTime.Today.Day)
                                         {
-                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
-                                        }
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
+                                        } 
                                     </div>
                                     <small class="text-muted">option 1</small>
                                 </div>
@@ -94,14 +96,14 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src="~/img/noodles.jpg" alt="noodles" />
+                            <img src="~/img/edamame_noodles.jpg" alt="noodles" />
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         @if (currentDay > DateTime.Today.Day)
                                         {
-                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" id="details">Details</button>
+                                            <a href="Detail" type="button" class="btn btn-sm btn-outline-secondary">Details</a>
                                         }
                                         @if (currentDay <= DateTime.Today.Day)
                                         {
