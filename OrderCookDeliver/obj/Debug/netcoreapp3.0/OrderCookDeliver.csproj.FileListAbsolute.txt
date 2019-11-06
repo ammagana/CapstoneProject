@@ -254,3 +254,4 @@ C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netco
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.pdb
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\Detail.cshtml.g.cs
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart.cshtml.g.cs
+C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\Detail.cshtml.g.cs
