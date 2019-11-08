@@ -64,10 +64,12 @@ body {
       background-image: url('\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\wwwroot\img\homePageBackGroundImage.jpg');
     */
     background-image: url('homePageBackGroundImage.jpg');
-    background-position: top;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: inherit;
-    height: 1197px;
+    margin: auto;
+    /*height: 1197px;*/
 }
 .footer {
   position: absolute;
