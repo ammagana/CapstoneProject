@@ -8124,19 +8124,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Davin_Thomas\\.nuget\\packages\\": {}
+    "C:\\Users\\GrimDino\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Davin_Thomas\\workspace\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+      "projectUniqueName": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
       "projectName": "OrderCookDeliver",
-      "projectPath": "C:\\Users\\Davin_Thomas\\workspace\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
-      "packagesPath": "C:\\Users\\Davin_Thomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Davin_Thomas\\workspace\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
+      "projectPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+      "packagesPath": "C:\\Users\\GrimDino\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Davin_Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GrimDino\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

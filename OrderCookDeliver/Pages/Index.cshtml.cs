@@ -19,7 +19,7 @@ namespace OrderCookDeliver.Pages
 
         public void OnGet()
         {
-
+         
         }
     }
 }
