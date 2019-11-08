@@ -384,3 +384,4 @@ C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\obj\Debug\netc
 C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.dll
 C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.pdb
 C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.csprojAssemblyReference.cache
+C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_Footer.cshtml.g.cs
