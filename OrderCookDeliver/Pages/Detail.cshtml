@@ -14,7 +14,7 @@
 
             <div class="text-center view overlay hm-white-slight">
 
-                <img src="~/img/noodles.jpg" class="img-fluid" alt="">
+                <img src="~/img/Chicken.jpg" class="img-fluid" alt="">
 
                 <a href="#">
 
@@ -27,13 +27,19 @@
             <div class="card-block">
 
                 <!--Title-->
-
-                <h4 class="card-title">@Model.Name</h4>
-
+                <div class="align-content-center">
+                    <h4 class="card-title">@Model.Name</h4>
+                </div>
                 <!--Text-->
 
                 <p class="card-text">@Model.Description.</p>
+                <br />
 
+                <div class="nutrition-info-content" style="display: block;">
+                    <img src="~/img/NutritionFacts.JPG" class="img-fluid" />
+                </div>
+
+                <br />
                 <p class="card-text">@Model.Ingredients</p>
                 <section class="o-Ingredients">
                     <header class="o-Ingredients__m-Header">
@@ -60,19 +66,11 @@
                     </div>
 
                 </section>
-                <div class="container">
-                    <div class="title-bar">
-                        <h4> Recipe Nutritional Inforamtion</h4>
-                        
-                   </div>
-                    <div class="nutrition-info-content" style="display: block;">
-                        
-                           
-                                <img src="~/img/NutritionFacts.JPG" class="img-fluid" />
-                            
-                        
-                    </div>
-                    </div>
+
+                <p></p>
+
+
+            </div>
                 <p></p>
 
                 <p class="btn btn-group pull-right">
@@ -80,7 +78,7 @@
 
                     <a href="Menu" class="btn btn-default">Show all Meals</a>
 
-                    <a href="ShoppingCart" class="btn btn-default" id="cartButton">
+                    <a class="btn btn-success" id="cartButton" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-mealid="@Model.MealID">
 
                         Add to cart
 
@@ -95,6 +93,17 @@
         </div>
 
     </div>
-
+<div class="o-Ingredients__m-Body">
+    <p class="o-Ingredients__a-Ingredient">
+        2 Whole free-range, organic chickens
+    </p>
+    <p class="o-Ingredients__a-Ingredient">
+        Vegetable oil of choice, for frying the chicken
+    </p>
+    <p class="o-Ingredients__a-Ingredient">6 cups all-purpose flour</p>
+    <p class="o-Ingredients__a-Ingredient">1 tablespoon onion powder</p>
+    <p class="o-Ingredients__a-Ingredient">2 tablespoons of garlic powder</p>
+    <p class="o-Ingredients__a-Ingredient">2 teaspoons cayenne pepper</p>
+    <p class="o-Ingredients__a-Ingredient">2 cups of buttermilk</p>
 </div>
 
