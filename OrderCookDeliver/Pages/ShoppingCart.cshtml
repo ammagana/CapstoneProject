@@ -5,8 +5,8 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>ShoppingCart</h1>
 
+<h1>ShoppingCart</h1>
 <table style="width:100%">
     <thead>
         <tr>
@@ -27,16 +27,16 @@
     <tbody>
         <tr>
             <td>
-                Meal Name
+                @Request.Query["Meal"]
             </td>
             <td>
-
             </td>
             <td>
-                qty
+                @Request.Query["Qty"]
             </td>
             <td> </td>
             <td><a href="">edit</a> | <a href="">delete</a></td>
         </tr>
     </tbody>
 </table>
+

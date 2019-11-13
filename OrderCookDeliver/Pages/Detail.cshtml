@@ -25,34 +25,35 @@
             </div>
             
             <div class="card-block">
+                <form method="get" action="ShoppingCart">
+                    <!--Title-->
+                    
+                    <h4 class="card-title">@Model.Name</h4>
+                    <input type="text" name="Meal" value="@Model.Name"hidden/>
 
-                <!--Title-->
+                    <!--Text-->
 
-                <h4 class="card-title">@Model.Name</h4>
+                    <p class="card-text">@Model.Description.</p>
 
-                <!--Text-->
-
-                <p class="card-text">@Model.Description.</p>
-
-                <p class="card-text">@Model.Ingredients</p>
-                <section class="o-Ingredients">
-                    <header class="o-Ingredients__m-Header">
-                        <div class="o-Ingredients__m-TextWrap">
-                            <h3 class="o-Ingredients__a-HeadLine">
-                                <span class="o-Ingredients__a-HeadLineText">
-                                    Ingredients
-                                </span>
-                            </h3>
+                    <p class="card-text">@Model.Ingredients</p>
+                    <section class="o-Ingredients">
+                        <header class="o-Ingredients__m-Header">
+                            <div class="o-Ingredients__m-TextWrap">
+                                <h3 class="o-Ingredients__a-HeadLine">
+                                    <span class="o-Ingredients__a-HeadLineText">
+                                        Ingredients
+                                    </span>
+                                </h3>
+                            </div>
+                        </header>
+                        <div class="o-Ingredients__m-Body">
+                            <p class="o-Ingredients__a-Ingredient">
+                                2 Whole free-range, organic chickens
+                            </p>
                         </div>
-                    </header>
-                    <div class="o-Ingredients__m-Body">
-                        <p class="o-Ingredients__a-Ingredient">
-                            2 Whole free-range, organic chickens
-                        </p>
-                    </div>
-                </section>
+                    </section>
 
-                <form method="post" action="ShoppingCart">
+
                     <div>
                         <select id="select1" name="Qty">
                             <option>1</option>
@@ -73,7 +74,7 @@
 
                         <a href="Menu" class="btn btn-default btn-outline-secondary">Show all Meals</a>
 
-                        <button class="btn btn-default btn-outline-secondary"  id="submit">
+                        <button class="btn btn-default btn-outline-secondary" id="submit">
 
                             Add to cart
 
