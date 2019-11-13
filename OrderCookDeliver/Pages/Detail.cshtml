@@ -49,47 +49,39 @@
                         <p class="o-Ingredients__a-Ingredient">
                             2 Whole free-range, organic chickens
                         </p>
-                        <p class="o-Ingredients__a-Ingredient">
-                            Vegetable oil of choice, for frying the chicken
-                        </p>
-                        <p class="o-Ingredients__a-Ingredient">6 cups all-purpose flour</p>
-                        <p class="o-Ingredients__a-Ingredient">1 tablespoon onion powder</p>
-                        <p class="o-Ingredients__a-Ingredient">2 tablespoons of garlic powder</p>
-                        <p class="o-Ingredients__a-Ingredient">2 teaspoons cayenne pepper</p>
-                        <p class="o-Ingredients__a-Ingredient">2 cups of buttermilk</p>
                     </div>
-
                 </section>
-                <div class="container">
-                    <div class="title-bar">
-                        <h4> Recipe Nutritional Inforamtion</h4>
-                        
-                   </div>
-                    <div class="nutrition-info-content" style="display: block;">
-                        
-                           
-                                <img src="~/img/NutritionFacts.JPG" class="img-fluid" />
-                            
-                        
+
+                <form method="post" action="ShoppingCart">
+                    <div>
+                        <select id="select1" name="Qty">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>  Servings
                     </div>
-                    </div>
-                <p></p>
+                    <p></p>
 
-                <p class="btn btn-group pull-right">
+                    <p class="btn btn-group pull-right">
 
+                        <a href="Menu" class="btn btn-default btn-outline-secondary">Show all Meals</a>
 
-                    <a href="Menu" class="btn btn-default">Show all Meals</a>
+                        <button class="btn btn-default btn-outline-secondary"  id="submit">
 
-                    <a href="ShoppingCart" class="btn btn-default" id="cartButton">
+                            Add to cart
 
-                        Add to cart
-
-                    </a>
+                        </button>
 
 
-
-                </p>
-
+                    </p>
+                </form>
             </div>
 
         </div>
