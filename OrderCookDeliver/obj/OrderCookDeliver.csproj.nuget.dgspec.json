@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Davin_Thomas\\Source\\Repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {}
+    "C:\\Users\\Davin_Thomas\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Davin_Thomas\\Source\\Repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {
+    "C:\\Users\\Davin_Thomas\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Davin_Thomas\\Source\\Repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+        "projectUniqueName": "C:\\Users\\Davin_Thomas\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
         "projectName": "OrderCookDeliver",
-        "projectPath": "C:\\Users\\Davin_Thomas\\Source\\Repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+        "projectPath": "C:\\Users\\Davin_Thomas\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
         "packagesPath": "C:\\Users\\Davin_Thomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davin_Thomas\\Source\\Repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
+        "outputPath": "C:\\Users\\Davin_Thomas\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Davin_Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
