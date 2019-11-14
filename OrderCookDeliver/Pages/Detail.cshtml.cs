@@ -11,7 +11,7 @@ namespace OrderCookDeliver.Pages
     {
         public int MealID { get; set; }
         public string Name { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
         public string Description { get; set; }
         public string ImageURL { get; set; }
         public int ServingSize { get; set; }
@@ -24,6 +24,7 @@ namespace OrderCookDeliver.Pages
             Name = "Crispy Fried Chicken";
             Description = " Forget Noodles with buck choy and edamame, fried chicken is what's up. It's thinner than skin-on, bone-in fried chicken, which means the ratio of breading to meat is higher. In other words, it's crispy AF";
             Qty = 1;
+            Price = 5.99;
         }
         
 

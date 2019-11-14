@@ -4,10 +4,20 @@
     ViewData["Title"] = "ShoppingCart";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
+@{ 
+    List< String > cart = new List<string>();
+    cart.Add(Request.Query["Meal"]);
+    cart.Add(Request.Query["Qty"]);
+    cart.Add(Request.Query["Price"]);
 
+    int serving = Int32.Parse(Request.Query["Qty"]);
+    double price = Double.Parse(Request.Query["Price"]);
+    double total = Math.Round(serving * price, 2);
+
+}
 
 <h1>ShoppingCart</h1>
-<table style="width:100%">
+<table style="width:100%" border="1">
     <thead>
         <tr>
             <th>
@@ -17,26 +27,48 @@
 
             </th>
             <th>
-                Qty.
+                Serving
+            </th>
+            <th>
+                price
             </th>
             <th>
                 <!--edit/delete-->
             </th>
         </tr>
     </thead>
-    <tbody>
+    @for(int i = 0; i < cart.Count; i = i + 3)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @cart[i]
+                </td>
+                <td>
+                </td>
+                <td>
+                    @cart[i+1]
+                </td>
+                <td>
+
+                </td>
+                <td>
+                   @total
+                </td>
+                <td><a href="">edit</a> | <a href="">delete</a></td>
+            </tr>
+        </tbody>                
+    }
+    <tfoot>
         <tr>
+            <th>
+            <b>Total</b>
+            </th>
             <td>
-                @Request.Query["Meal"]
+                $ @total
             </td>
-            <td>
-            </td>
-            <td>
-                @Request.Query["Qty"]
-            </td>
-            <td> </td>
-            <td><a href="">edit</a> | <a href="">delete</a></td>
-        </tr>
-    </tbody>
+         </tr>
+
+    </tfoot>
 </table>
 

@@ -9,10 +9,13 @@ namespace OrderCookDeliver.Pages
 {
     public class ShoppingCartModel : PageModel
     {
-
+        public string Cart{
+            get;set;
+        }
         public void OnGet()
         {
 
         }
+        
     }
 }
