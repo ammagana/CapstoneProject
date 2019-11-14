@@ -5,7 +5,7 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
 <div class="container marginTop">
 
     <div class="row">
@@ -23,7 +23,7 @@
                 </a>
 
             </div>
-            
+
             <div class="card-block">
 
                 <!--Title-->
@@ -34,61 +34,8 @@
 
                 <p class="card-text">@Model.Description.</p>
 
-                <p class="card-text">@Model.Ingredients</p>
-                <section class="o-Ingredients">
-                    <header class="o-Ingredients__m-Header">
-                        <div class="o-Ingredients__m-TextWrap">
-                            <h3 class="o-Ingredients__a-HeadLine">
-                                <span class="o-Ingredients__a-HeadLineText">
-                                    Ingredients
-                                </span>
-                            </h3>
-                        </div>
-                    </header>
-                    <div class="o-Ingredients__m-Body">
-                        <p class="o-Ingredients__a-Ingredient">
-                            2 Whole free-range, organic chickens
-                        </p>
-                        <p class="o-Ingredients__a-Ingredient">
-                            Vegetable oil of choice, for frying the chicken
-                        </p>
-                        <p class="o-Ingredients__a-Ingredient">6 cups all-purpose flour</p>
-                        <p class="o-Ingredients__a-Ingredient">1 tablespoon onion powder</p>
-                        <p class="o-Ingredients__a-Ingredient">2 tablespoons of garlic powder</p>
-                        <p class="o-Ingredients__a-Ingredient">2 teaspoons cayenne pepper</p>
-                        <p class="o-Ingredients__a-Ingredient">2 cups of buttermilk</p>
-                    </div>
 
-                </section>
-                <div class="container">
-                    <div class="title-bar">
-                        <h4> Recipe Nutritional Inforamtion</h4>
-                        
-                   </div>
-                    <div class="nutrition-info-content" style="display: block;">
-                        
-                           
-                                <img src="~/img/NutritionFacts.JPG" class="img-fluid" />
-                            
-                        
-                    </div>
-                    </div>
                 <p></p>
-
-                <p class="btn btn-group pull-right">
-
-
-                    <a href="Menu" class="btn btn-default">Show all Meals</a>
-
-                    <a href="ShoppingCart" class="btn btn-default" id="cartButton">
-
-                        Add to cart
-
-                    </a>
-
-
-
-                </p>
 
             </div>
 
@@ -97,4 +44,58 @@
     </div>
 
 </div>
+<p class="card-text">@Model.Ingredients</p>
 
+
+<div class="container">
+    <div class="side-menu">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="side-menu-container">
+                <ul class="nav">
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#about">
+                            Ingredients<span class="caret"></span>
+                        </a>
+                        <div id="about" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <section class="o-Ingredients">
+                                        <div class="o-Ingredients__m-Body">
+                                            <p class="o-Ingredients__a-Ingredient">
+                                                2 Whole free-range, organic chickens
+                                            </p>
+                                            <p class="o-Ingredients__a-Ingredient">
+                                                Vegetable oil of choice, for frying the chicken
+                                            </p>
+                                            <p class="o-Ingredients__a-Ingredient">6 cups all-purpose flour</p>
+                                            <p class="o-Ingredients__a-Ingredient">1 tablespoon onion powder</p>
+                                            <p class="o-Ingredients__a-Ingredient">2 tablespoons of garlic powder</p>
+                                            <p class="o-Ingredients__a-Ingredient">2 teaspoons cayenne pepper</p>
+                                            <p class="o-Ingredients__a-Ingredient">2 cups of buttermilk</p>
+                                        </div>
+                                    </section>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<p class="btn btn-group pull-right">
+
+
+    <a href="Menu" class="btn btn-default">Show all Meals</a>
+
+    <a href="ShoppingCart" class="btn btn-success" id="cartButton">
+
+        Add to cart
+
+    </a>
+
+
+
+</p>
