@@ -1,0 +1,49 @@
+﻿@page
+@model OrderCookDeliver.Pages.ShoppingCart.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+@{ 
+    String price = (Decimal.Parse(Request.Query["Price"]) * Int32.Parse(Request.Query["Qty"])).ToString();
+    String qty = Request.Query["Qty"];
+}
+
+<h1>Confirm</h1>
+
+<h4>Meal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cart.Meal" class="control-label"></label>
+                <input asp-for="Cart.Meal" class="form-control" value="@Request.Query["Meal"]" disabled/>
+                <span asp-validation-for="Cart.Meal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cart.Price" class="control-label"></label>
+                <input asp-for="Cart.Price" class="form-control" value="@price" disabled/>
+                <span asp-validation-for="Cart.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cart.Serving" class="control-label"></label>
+                <input asp-for="Cart.Serving" class="form-control" value="@qty" disabled />
+                <span asp-validation-for="Cart.Serving" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Confirm" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OrderCookDeliver.Pages;
+using Microsoft.EntityFrameworkCore;
+using OrderCookDeliver.Data;
 
 namespace OrderCookDeliver
 {
@@ -25,6 +27,9 @@ namespace OrderCookDeliver
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<OrderCookDeliverContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("OrderCookDeliverContext")));
           
         }
 
