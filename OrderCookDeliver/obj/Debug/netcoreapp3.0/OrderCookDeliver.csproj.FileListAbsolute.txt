@@ -523,3 +523,4 @@ C:\Users\Davin_Thomas\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\n
 C:\Users\Davin_Thomas\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.csproj.CopyComplete
 C:\Users\Davin_Thomas\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.dll
 C:\Users\Davin_Thomas\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.pdb
+C:\Users\Davin_Thomas\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ImportExport.cshtml.g.cs
