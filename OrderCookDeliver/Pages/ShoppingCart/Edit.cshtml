@@ -8,7 +8,7 @@
 
 <h1>Edit</h1>
 
-<h4>Cart</h4>
+<h4>Meal</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -17,12 +17,12 @@
             <input type="hidden" asp-for="Cart.ID" />
             <div class="form-group">
                 <label asp-for="Cart.Meal" class="control-label"></label>
-                <input asp-for="Cart.Meal" class="form-control" />
+                <input asp-for="Cart.Meal" class="form-control" readonly />
                 <span asp-validation-for="Cart.Meal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Cart.Price" class="control-label"></label>
-                <input asp-for="Cart.Price" class="form-control" />
+                <input asp-for="Cart.Price" class="form-control" readonly />
                 <span asp-validation-for="Cart.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -31,14 +31,14 @@
                 <span asp-validation-for="Cart.Serving" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Update" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Back to Cart</a>
 </div>
 
 @section Scripts {
