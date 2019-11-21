@@ -1,0 +1,247 @@
+﻿@page
+@model OrderCookDeliver.Pages.MasterCalendar.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].mealId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].mealName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].preparationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].pricePerServg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_11)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_12)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_13)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_14)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_15)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_16)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].ingredient_17)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].calPerServg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].totalFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].saturatedFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].transFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].monoUnsatFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].polyUnsatFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].omega_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].omega_6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].cholesterol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].totalCarb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].dietaryFiber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].sugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].protein)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].procedure)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Calendar) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.mealId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mealName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preparationTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pricePerServg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_9)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_11)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_12)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_13)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_14)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_15)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_16)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ingredient_17)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.calPerServg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.totalFat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.saturatedFat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.transFat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monoUnsatFat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.polyUnsatFat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.omega_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.omega_6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cholesterol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.totalCarb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dietaryFiber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.protein)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.procedure)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
