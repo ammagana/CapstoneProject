@@ -25,5 +25,6 @@ namespace OrderCookDeliver.Pages.ShoppingCart
         {
             Cart = await _context.Cart.ToListAsync();
         }
+        
     }
 }
