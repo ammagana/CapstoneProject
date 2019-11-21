@@ -252,7 +252,6 @@ C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netco
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.dll
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\OrderCookDeliver.pdb
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\Detail.cshtml.g.cs
-C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart.cshtml.g.cs
 C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\Detail.cshtml.g.cs
 C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Davin_Thomas\workspace\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\appsettings.json
@@ -389,3 +388,9 @@ C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcor
 C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Details.cshtml.g.cs
 C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Edit.cshtml.g.cs
 C:\Users\Armando\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Index.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\MasterCalendar.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Create.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Delete.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Details.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Edit.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\ShoppingCart\Index.cshtml.g.cs
