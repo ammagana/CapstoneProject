@@ -15,5 +15,6 @@ namespace OrderCookDeliver.Data
         }
 
         public DbSet<OrderCookDeliver.Models.Cart> Cart { get; set; }
+
     }
 }
