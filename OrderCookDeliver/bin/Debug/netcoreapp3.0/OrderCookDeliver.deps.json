@@ -29,6 +29,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
+          "NPOI": "2.4.1",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -1004,6 +1005,37 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NPOI/2.4.1": {
+        "dependencies": {
+          "SharpZipLib": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.6.0",
+          "System.Drawing.Common": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          },
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          },
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          },
+          "lib/netstandard2.0/NPOI.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {},
+          "lib/netstandard2.0/NPOI.dll": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
@@ -1098,6 +1130,17 @@
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
           }
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "1.0.0.999",
+            "fileVersion": "1.0.0.999"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -1415,6 +1458,9 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0",
           "Microsoft.Win32.SystemEvents": "4.6.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -4120,6 +4166,13 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
+    "NPOI/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-85790/CY9z4DCU1KLpcdLSqaqaqmQOenTqXJfcsYK8LIKNAAoTgjT5LYLbORgdwAd63sbaJiCfB1SIn/dAXrJw==",
+      "path": "npoi/2.4.1",
+      "hashPath": "npoi.2.4.1.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -4266,6 +4319,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SharpZipLib/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
+      "path": "sharpziplib/1.0.0",
+      "hashPath": "sharpziplib.1.0.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

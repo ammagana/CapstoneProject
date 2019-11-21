@@ -21,8 +21,8 @@ namespace OrderCookDeliver.Pages
         public void OnGet()
         {
             ImageURL = "noodles.jpg";
-            Name = "Crispy Fried Chicken";
-            Description = " Forget Noodles with buck choy and edamame, fried chicken is what's up. It's thinner than skin-on, bone-in fried chicken, which means the ratio of breading to meat is higher. In other words, it's crispy AF";
+            Name = "Quinoa Stuffed Peppers";
+            Description = "Bell peppers are stuffed and baked with quinoa, vegetables, and tomato sauce. Top with bubbling mozzarella cheese for a hearty and flavorful meal... This vegetarian dish is so filling, and I love it because its incredibly versatile.";
             Qty = 1;
             Price = 5.99;
         }

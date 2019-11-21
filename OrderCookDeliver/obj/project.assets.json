@@ -828,6 +828,26 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NPOI/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {},
+          "lib/netstandard2.0/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {},
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {},
+          "lib/netstandard2.0/NPOI.dll": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -1044,6 +1064,15 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -1433,7 +1462,7 @@
           "Microsoft.Win32.SystemEvents": "4.6.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
@@ -3901,6 +3930,40 @@
         "newtonsoft.json.nuspec"
       ]
     },
+    "NPOI/2.4.1": {
+      "sha512": "85790/CY9z4DCU1KLpcdLSqaqaqmQOenTqXJfcsYK8LIKNAAoTgjT5LYLbORgdwAd63sbaJiCfB1SIn/dAXrJw==",
+      "type": "package",
+      "path": "npoi/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Read Me.txt",
+        "lib/NPOI.xml",
+        "lib/net40/NPOI.OOXML.dll",
+        "lib/net40/NPOI.OpenXml4Net.dll",
+        "lib/net40/NPOI.OpenXmlFormats.dll",
+        "lib/net40/NPOI.dll",
+        "lib/net45/NPOI.OOXML.dll",
+        "lib/net45/NPOI.OpenXml4Net.dll",
+        "lib/net45/NPOI.OpenXmlFormats.dll",
+        "lib/net45/NPOI.dll",
+        "lib/netstandard2.0/NPOI.OOXML.deps.json",
+        "lib/netstandard2.0/NPOI.OOXML.dll",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.deps.json",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.deps.json",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.0/NPOI.deps.json",
+        "lib/netstandard2.0/NPOI.dll",
+        "logo/120_120.jpg",
+        "logo/240_240.png",
+        "logo/32_32.jpg",
+        "logo/60_60.jpg",
+        "npoi.2.4.1.nupkg.sha512",
+        "npoi.nuspec"
+      ]
+    },
     "NuGet.Frameworks/4.7.0": {
       "sha512": "qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "type": "package",
@@ -4203,6 +4266,21 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SharpZipLib/1.0.0": {
+      "sha512": "YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
+      "type": "package",
+      "path": "sharpziplib/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.0.0.nupkg.sha512",
+        "sharpziplib.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -8515,7 +8593,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0",
       "Microsoft.Extensions.Logging.Debug >= 3.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
+      "NPOI >= 2.4.1"
     ]
   },
   "packageFolders": {
@@ -8581,6 +8660,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "NPOI": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           }
         },
         "imports": [
