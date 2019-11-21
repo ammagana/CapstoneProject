@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace OrderCookDeliver.Models
+﻿namespace OrderCookDeliver.Models
 {
-    public class masterCalendar
+    public class Calendar
     {
         public int ID { get; set; }
 
@@ -17,7 +12,7 @@ namespace OrderCookDeliver.Models
         public int preparationTime { get; set; }
         public double pricePerServg { get; set; }
         public string ingredient_1 { get; set; }
-        public string ingredient_2{ get; set; }
+        public string ingredient_2 { get; set; }
         public string ingredient_3 { get; set; }
         public string ingredient_4 { get; set; }
         public string ingredient_5 { get; set; }
