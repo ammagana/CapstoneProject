@@ -4,12 +4,10 @@
     {
         public int ID { get; set; }
 
-        public string mealId { get; set; }
-
         public string mealName { get; set; }
 
         public string description { get; set; }
-        public int preparationTime { get; set; }
+        public string preparationTime { get; set; }
         public double pricePerServg { get; set; }
         public string ingredient_1 { get; set; }
         public string ingredient_2 { get; set; }
@@ -42,6 +40,7 @@
         public double sugar { get; set; }
         public double protein { get; set; }
         public string procedure { get; set; }
-
+        public int rotation { get; set; }
+        public int day { get; set; }
     }
 }

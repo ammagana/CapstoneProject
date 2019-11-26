@@ -16,11 +16,6 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Calendar.ID" />
             <div class="form-group">
-                <label asp-for="Calendar.mealId" class="control-label"></label>
-                <input asp-for="Calendar.mealId" class="form-control" />
-                <span asp-validation-for="Calendar.mealId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Calendar.mealName" class="control-label"></label>
                 <input asp-for="Calendar.mealName" class="form-control" />
                 <span asp-validation-for="Calendar.mealName" class="text-danger"></span>
@@ -194,6 +189,16 @@
                 <label asp-for="Calendar.procedure" class="control-label"></label>
                 <input asp-for="Calendar.procedure" class="form-control" />
                 <span asp-validation-for="Calendar.procedure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.rotation" class="control-label"></label>
+                <input asp-for="Calendar.rotation" class="form-control" />
+                <span asp-validation-for="Calendar.rotation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.day" class="control-label"></label>
+                <input asp-for="Calendar.day" class="form-control" />
+                <span asp-validation-for="Calendar.day" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
