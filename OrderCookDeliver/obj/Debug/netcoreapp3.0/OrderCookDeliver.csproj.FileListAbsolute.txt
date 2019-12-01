@@ -404,3 +404,9 @@ C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netco
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\MasterCalendar\Edit.cshtml.g.cs
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\MasterCalendar\ImportExport\ImportExport.cshtml.g.cs
 C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\obj\Debug\netcoreapp3.0\Razor\Pages\MasterCalendar\Index.cshtml.g.cs
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\EntityFramework.SqlServer.dll
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\EntityFramework.dll
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\System.CodeDom.dll
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\GrimDino\source\repos\OrderCookDeliver\OrderCookDeliver\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
