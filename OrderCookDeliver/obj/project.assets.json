@@ -8598,25 +8598,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Armando\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\GrimDino\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+      "projectUniqueName": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
       "projectName": "OrderCookDeliver",
-      "projectPath": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
-      "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
+      "projectPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+      "packagesPath": "C:\\Users\\GrimDino\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\GrimDino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
