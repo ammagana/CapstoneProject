@@ -42,5 +42,6 @@
         public string procedure { get; set; }
         public int rotation { get; set; }
         public int day { get; set; }
+        public int mealId { get; set; }
     }
 }
