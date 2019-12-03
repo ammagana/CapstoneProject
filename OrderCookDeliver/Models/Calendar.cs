@@ -7,7 +7,7 @@
         public string mealName { get; set; }
 
         public string description { get; set; }
-        public string preparationTime { get; set; }
+        public string preparationTime { get; set; } 
         public double pricePerServg { get; set; }
         public string ingredient_1 { get; set; }
         public string ingredient_2 { get; set; }

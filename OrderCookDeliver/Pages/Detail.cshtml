@@ -1,5 +1,6 @@
 ﻿@page
-@model OrderCookDeliver.Pages.DetailModel
+@model OrderCookDeliver.Models.Calendar
+
 @{
     ViewData["Title"] = "Detail";
     Layout = "~/Pages/Shared/_Layout.cshtml";
@@ -28,12 +29,12 @@
                 <form method="get" action="~/ShoppingCart/Create">
                     <!--Title-->
                     
-                    <h4 class="card-title">@Model.Name</h4>
-                    <input type="text" name="Meal" value="@Model.Name"hidden/>
-                    <input type="text" name="Price" value="@Model.Price"hidden/>
+                    <h4 class="card-title">@Model.mealName</h4>
+                    <input type="text" name="Meal" value="@Model.mealName"hidden/>
+                    <input type="text" name="Price" value="@Model.pricePerServg"hidden/>
                     <!--Text-->
 
-                    <p class="card-text">@Model.Description.</p>
+                    <p class="card-text">@Model.description.</p>
 
                     <div class="container">
                         <div class="panel panel-default">
@@ -53,19 +54,19 @@
                                         <div class="container">
                                             <div class="fluid-row">
                                                 <div class="col-xs-1">
-                                                    Avocado<br />
-                                                    Quinoa <br />
-                                                    Black Beans<br />
-                                                    Green Onions<br />
-                                                    Red Bell Peppers<br />
-                                                    Corn<br />
-                                                    Extra Virgin Olive Oil<br />
-                                                    Lime Juice<br />
-                                                    Salt<br />
-                                                    Corn<br />
-                                                    Extra Virgin Olive Oil<br />
-                                                    Lime Juice <br />
-                                                    Salt
+                                                    @Model.ingredient_1<br />
+                                                    @Model.ingredient_2 <br />
+                                                    @Model.ingredient_3<br />
+                                                    @Model.ingredient_4<br />
+                                                    @Model.ingredient_5<br />
+                                                    @Model.ingredient_6<br />
+                                                    @Model.ingredient_7<br />
+                                                    @Model.ingredient_8<br />
+                                                    @Model.ingredient_9<br />
+                                                    @Model.ingredient_10<br />
+                                                    @Model.ingredient_11<br />
+                                                    @Model.ingredient_12<br />
+                                                    @Model.ingredient_13
                                                 </div>
                                                 
                                             </div>
@@ -84,11 +85,20 @@
                                         <div class="container">
                                             <div class="fluid-row">
                                                 <div class="col-xs-1">
-                                                    Calories: 922.2kcal<br />
-                                                    Total Fat: 41.2g<br />
-                                                    Sat: 5.6g<br />
-                                                    Trans: 0g<br />
-                                                    Monounsat: 24.88g
+                                                    Calories: @Model.calPerServg<br />
+                                                    Total Fat: @Model.totalFat<br />
+                                                    Sat: @Model.saturatedFat<br />
+                                                    Trans: @Model.transFat<br />
+                                                    Monounsat: @Model.monoUnsatFat<br />
+                                                    Polyunsat: @Model.polyUnsatFat<br />
+                                                    Omega 3: @Model.omega_3<br />
+                                                    Omega 6: @Model.omega_6<br />
+                                                    Chol: @Model.cholesterol<br />
+                                                    Total Carb: @Model.totalCarb<br />
+                                                    Dietary Fiber: @Model.dietaryFiber<br />
+                                                    Sugar: @Model.sugar<br />
+                                                    Protein: @Model.protein
+
                                                 </div>
                                                 
                                             </div>
@@ -107,7 +117,7 @@
                                         <div class="container">
                                             <div class="fluid-row">
                                                 <div class="col-xs-1">
-                                                    Detail:
+                                                    Detail: @Model.procedure
                                                 </div>
                                                 
                                             </div>
