@@ -15,7 +15,7 @@ namespace OrderCookDeliver.Pages
         public string Description { get; set; }
         public string ImageURL { get; set; }
         public int ServingSize { get; set; }
-        public string Ingredients { get; set; }
+        public string Ingredients { get; set; } 
         public string NutrientFacts { get; set; }
         public int Qty { get; set; }
         public void OnGet()

@@ -86,7 +86,7 @@
                                                 <p class="card-text">@item.mealName</p>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="btn-group">
-                                                        @if (currentDay != DateTime.Today.Day)
+                                                        @if (currentDay > DateTime.Today.Day)
                                                         {
 
                                                             <form action="~/Detail" method="get">
