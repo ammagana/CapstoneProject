@@ -1,32 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.RazorPages; 
 
 namespace OrderCookDeliver.Pages
 {
     public class DetailModel : PageModel
     {
-        public int MealID { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public string Description { get; set; }
-        public string ImageURL { get; set; }
-        public int ServingSize { get; set; }
-        public string Ingredients { get; set; } 
-        public string NutrientFacts { get; set; }
-        public int Qty { get; set; }
-        public void OnGet()
+        private readonly OrderCookDeliver.Data.OrderCookDeliverContext _context;
+        public DetailModel(OrderCookDeliver.Data.OrderCookDeliverContext context)
         {
-            ImageURL = "noodles.jpg";
-            Name = "Quinoa Stuffed Peppers";
-            Description = "Bell peppers are stuffed and baked with quinoa, vegetables, and tomato sauce. Top with bubbling mozzarella cheese for a hearty and flavorful meal... This vegetarian dish is so filling, and I love it because its incredibly versatile.";
-            Qty = 1;
-            Price = 5.99;
+            _context = context;
         }
-        
+        public IList<OrderCookDeliver.Models.Calendar> calendar { get; set; }
+        public async Task OnGetAsync()
+        {
+            calendar = await _context.Calendar.ToListAsync();
+        }
+
 
     }
 }
