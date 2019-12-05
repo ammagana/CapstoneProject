@@ -23,6 +23,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Calendar[0].day)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calendar[0].mealId)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -37,6 +40,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.day)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mealId)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
