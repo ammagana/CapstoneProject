@@ -10,6 +10,9 @@
     string month = "Jan";
     int day = Convert.ToInt32(week.Day);
 
+    //determine the rotation
+    int rot = 1;
+
     //determine the current month
     switch (week.Month)
     {
@@ -61,7 +64,7 @@
         </div>
     </section>
 
-    <div class="album py-5 bg-light">
+        <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
                 @foreach (var item in Model.calendar)
@@ -72,70 +75,75 @@
                         DateTime dayWeek = week.AddDays(i);
                         if (item.rotation == 1 & item.day == i)
                         {
-
                             @if (item.mealId == 1)
                             {
-                                <h3><b>@month @currentDay, @dayWeek.DayOfWeek</b></h3>
-                                <div class="col-md-4">
-                                    <div class="card mb-4 shadow-sm">
-                                        <h6><b>@item.mealName</b></h6>
-                                        <img src="~/img/SobaNoodles.png" alt="@item.mealName" />
-                                        <div class="card-body">
-                                            <p class="card-text">@item.mealName</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="btn-group">
-                                                    @if (currentDay > DateTime.Today.Day)
-                                                    {
-                                                        <a href="Detail" class="btn btn-sm btn-outline-secondary">Details</a>
+                                    <div class="col-md-4" id=@item.ID>
+                                        <h3><b>@month @currentDay, @dayWeek.DayOfWeek</b></h3>
+                                        <div class="card mb-4 shadow-sm">
+                                            <h6><b>@item.mealName</b></h6>
+                                            <img src="~/img/@(item.mealName).png" alt="@item.mealName" height="480" width="338" />
+                                            <div class="card-body">
+                                                <p class="card-text">@item.mealName</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        @if (currentDay != DateTime.Today.Day)
+                                                        {
 
-                                                    }
-                                                    @if (currentDay <= DateTime.Today.Day)
-                                                    {
-                                                        <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
-                                                    }
+                                                            <form action="~/Detail" method="get">
+                                                                <input type="submit" class="btn btn-sm btn-outline-secondary" value="Details">
+                                                                <input type="text" value="@item.mealName" name="meal" hidden />
+                                                            </form>
+                                                        }
+                                                        @if (currentDay <= DateTime.Today.Day)
+                                                        {
+                                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
+                                                        }
+                                                    </div>
+                                                    <small class="text-muted">$5.99</small>
                                                 </div>
-                                                <small class="text-muted">$5.99</small>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                
-
+                                    <div class="col-md-4"></div>
+                               
                             }
                             @if (item.mealId == 2)
-                             {
-                                <div class="col-md-4">
-                                    <div class="card mb-4 shadow-sm">
-                                        <h6><b>@item.mealName</b></h6>
-                                        <img src="~/img/SobaNoodles.png" alt="@item.mealName" />
-                                        <div class="card-body">
-                                            <p class="card-text">@item.mealName</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="btn-group">
-                                                    @if (currentDay > DateTime.Today.Day)
-                                                    {
-                                                        <a href="Detail" class="btn btn-sm btn-outline-secondary">Details</a>
+                            {
 
-                                                    }
-                                                    @if (currentDay <= DateTime.Today.Day)
-                                                    {
-                                                        <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
-                                                    }
+                                
+                                    <div class="col-md-4" id=@item.ID>
+                                        <br /><br />
+                                        <div class="card mb-4 shadow-sm">
+                                            <h6><b>@item.mealName</b></h6>
+                                            <img src="~/img/@(item.mealName).png" alt="@item.mealName" height="480" width="338" />
+                                            <div class="card-body">
+                                                <p class="card-text">@item.mealName</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        @if (currentDay > DateTime.Today.Day)
+                                                        {
+                                                            <form action="~/Detail" method="get">
+                                                                <input type="submit" class="btn btn-sm btn-outline-secondary" value="Details">
+                                                                <input type="text" value="@item.mealName" name="meal" hidden />
+                                                            </form>
+                                                        }
+                                                        @if (currentDay <= DateTime.Today.Day)
+                                                        {
+                                                            <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
+                                                        }
+                                                    </div>
+                                                    <small class="text-muted">$5.99</small>
                                                 </div>
-                                                <small class="text-muted">$5.99</small>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                    
+                             }
                             }
-
                         }
                     }
-
-                }
+                </div>
             </div>
-        </div>
         </div>
 </main>
 
