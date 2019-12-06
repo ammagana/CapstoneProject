@@ -17,5 +17,6 @@ namespace OrderCookDeliver.Data
         public DbSet<OrderCookDeliver.Models.Cart> Cart { get; set; }
 
         public DbSet<OrderCookDeliver.Models.Calendar> Calendar { get; set; }
+
     }
 }

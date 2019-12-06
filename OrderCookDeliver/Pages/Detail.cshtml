@@ -13,12 +13,12 @@
     <div class="row">
         @foreach (var item in Model.calendar)
         {
-           
+            if (Request.Query["meal"] == item.mealName) {
                 <div class="card">
 
                 <div class="text-center view overlay hm-white-slight">
 
-                    <img src=~/img/@(item.mealName).png class="img-fluid" alt="@item.mealName">
+                    <img src=~/img/@(item.mealName).png class="img-fluid" alt="@item.mealName" width="1108" height="761">
 
                     <a href="#">
 
@@ -34,7 +34,7 @@
 
                         <h4 class="card-title">@item.mealName</h4>
                         <input type="text" name="Meal" value="@item.mealName" hidden />
-                        <input type="text" name="Price" value="@item.pricePerServg" hidden />
+                        <input type="text" name="Price" value="@(Math.Round(item.pricePerServg,2)*2)" hidden />
                         <!--Text-->
 
                         <p class="card-text">@item.description.</p>
@@ -151,20 +151,20 @@
                         <p class="btn btn-group pull-right">
 
                             <a href="Menu" class="btn btn-default btn-outline-secondary">Show all Meals</a>
-
+                            <input type="text" value="@Request.Query["day"]" name = "Day" hidden />
                             <button class="btn btn-default btn-outline-secondary" id="submit">
 
                                 Add to cart
 
                             </button>
-
-
                         </p>
                     </form>
                 </div>
 
-            </div>
+                </div>
 
-
+            }
         }
 
+    </div>
+</div>

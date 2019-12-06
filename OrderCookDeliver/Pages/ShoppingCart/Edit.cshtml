@@ -26,6 +26,11 @@
                 <span asp-validation-for="Cart.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Cart.PickupDay" class="control-label"></label>
+                <input asp-for="Cart.PickupDay" class="form-control" readonly />
+                <span asp-validation-for="Cart.PickupDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Cart.Serving" class="control-label"></label>
                 <input asp-for="Cart.Serving" class="form-control" />
                 <span asp-validation-for="Cart.Serving" class="text-danger"></span>

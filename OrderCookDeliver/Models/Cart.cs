@@ -14,5 +14,7 @@ namespace OrderCookDeliver.Models
         public decimal Price { get; set; }
 
         public int Serving { get; set; }
+
+        public string PickupDay { get; set; }
     }
 }
