@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using OrderCookDeliver.Data;
 using OrderCookDeliver.Models;
 
@@ -31,6 +32,7 @@ namespace OrderCookDeliver.Pages.ShoppingCart
         public async Task<RedirectResult> OnPost()
         {
             Cart = await _context.Cart.ToListAsync();
+            
             int x = 0;
             foreach (var item in Cart)
             {
@@ -44,7 +46,9 @@ namespace OrderCookDeliver.Pages.ShoppingCart
             await _context.SaveChangesAsync();
             var mealInfo = Request.Form["ordered"] +", "+ Request.Form["qtyOrder"] + ", " + Request.Form["pickupLocation"] + ", " + Request.Form["pickupTime"] + ", " + Request.Form["pickupDay"] + "\n";
             System.IO.File.AppendAllText("./Pages/Shared/OrderedMeals.txt", mealInfo);
-            
+
+            TempData["alertMessage"] = "Order was placed sucessfuly";
+
             return Redirect("../Index");   
         }
 

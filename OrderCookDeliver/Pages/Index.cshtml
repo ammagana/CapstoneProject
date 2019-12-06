@@ -3,7 +3,12 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+@if (null != TempData["alertMessage"])
+{
+    <script type="text/javascript">
+       alert("Your Order Has Been Placed");
+    </script>
+}
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">

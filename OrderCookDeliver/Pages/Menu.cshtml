@@ -18,7 +18,7 @@
     DateTime firstday = new DateTime(week.Year, week.Month, 1);
     DateTime monday = firstday.AddDays((DayOfWeek.Monday + 7 - firstday.DayOfWeek) % 7);
 
-    if (monday.Day < DateTime.Today.Day)
+    if (monday.Day < DateTime.Today.Day & DateTime.Today.DayOfWeek == DayOfWeek.Friday)
     {
         while (monday.Day < DateTime.Today.Day)
         {
