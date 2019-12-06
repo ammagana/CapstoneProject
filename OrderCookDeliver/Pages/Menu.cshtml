@@ -13,6 +13,28 @@
     //determine the rotation
     int rot = 1;
 
+
+    //mondays in a month
+    DateTime firstday = new DateTime(week.Year, week.Month, 1);
+    DateTime monday = firstday.AddDays((DayOfWeek.Monday + 7 - firstday.DayOfWeek) % 7);
+
+    if (monday.Day < DateTime.Today.Day)
+    {
+        while (monday.Day < DateTime.Today.Day)
+        {
+            monday = monday.AddDays(7);
+            if (rot == 1)
+            {
+                rot = 2;
+            }
+            else if (rot == 2)
+            {
+                rot = 1;
+            }
+        }
+        week = monday.AddDays(-1);
+        day = Convert.ToInt32(week.Day);
+    }
     //determine the current month
     switch (week.Month)
     {
@@ -73,7 +95,7 @@
                     {
                         int currentDay = day + i;
                         DateTime dayWeek = week.AddDays(i);
-                        if (item.rotation == 1 & item.day == i)
+                        if (item.rotation == rot & item.day == i)
                         {
                             @if (item.mealId == 1)
                             {
@@ -88,9 +110,9 @@
                                                     <div class="btn-group">
                                                         @if (currentDay > DateTime.Today.Day)
                                                         {
-
                                                             <form action="~/Detail" method="get">
                                                                 <input type="submit" class="btn btn-sm btn-outline-secondary" value="Details">
+                                                                <input type="text" value="@dayWeek.DayOfWeek @currentDay" name="day" hidden />
                                                                 <input type="text" value="@item.mealName" name="meal" hidden />
                                                             </form>
                                                         }
@@ -99,18 +121,18 @@
                                                             <button href="Detail" type="button" class="btn btn-sm btn-outline-secondary" disabled>Details</button>
                                                         }
                                                     </div>
-                                                    <small class="text-muted">$5.99</small>
+                                                    <small class="text-muted">$@Math.Round(item.pricePerServg * 2, 2)</small>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4"></div>
-                               
+
                             }
                             @if (item.mealId == 2)
                             {
 
-                                
+
                                     <div class="col-md-4" id=@item.ID>
                                         <br /><br />
                                         <div class="card mb-4 shadow-sm">
@@ -120,7 +142,7 @@
                                                 <p class="card-text">@item.mealName</p>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="btn-group">
-                                                        @if (currentDay != DateTime.Today.Day)
+                                                        @if (currentDay > DateTime.Today.Day)
                                                         {
                                                             <form action="~/Detail" method="get">
                                                                 <input type="submit" class="btn btn-sm btn-outline-secondary" value="Details">
@@ -138,13 +160,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                             }
+
                             }
                         }
                     }
+                }
                 </div>
             </div>
         </div>
+    <p>@week</p>
 </main>
+
 
