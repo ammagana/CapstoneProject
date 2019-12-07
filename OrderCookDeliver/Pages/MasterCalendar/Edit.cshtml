@@ -1,0 +1,221 @@
+﻿@page
+@model OrderCookDeliver.Pages.MasterCalendar.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Meal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Calendar.ID" />
+            <div class="form-group">
+                <label asp-for="Calendar.mealName" class="control-label"></label>
+                <input asp-for="Calendar.mealName" class="form-control" />
+                <span asp-validation-for="Calendar.mealName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.description" class="control-label"></label>
+                <input asp-for="Calendar.description" class="form-control" />
+                <span asp-validation-for="Calendar.description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.preparationTime" class="control-label"></label>
+                <input asp-for="Calendar.preparationTime" class="form-control" />
+                <span asp-validation-for="Calendar.preparationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.pricePerServg" class="control-label"></label>
+                <input asp-for="Calendar.pricePerServg" class="form-control" />
+                <span asp-validation-for="Calendar.pricePerServg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_1" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_1" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_2" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_2" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_3" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_3" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_4" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_4" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_5" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_5" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_6" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_6" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_7" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_7" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_7" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_8" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_8" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_8" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_9" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_9" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_9" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_10" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_10" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_11" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_11" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_11" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_12" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_12" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_13" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_13" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_13" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_14" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_14" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_14" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_15" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_15" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_15" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_16" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_16" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_16" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.ingredient_17" class="control-label"></label>
+                <input asp-for="Calendar.ingredient_17" class="form-control" />
+                <span asp-validation-for="Calendar.ingredient_17" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.calPerServg" class="control-label"></label>
+                <input asp-for="Calendar.calPerServg" class="form-control" />
+                <span asp-validation-for="Calendar.calPerServg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.totalFat" class="control-label"></label>
+                <input asp-for="Calendar.totalFat" class="form-control" />
+                <span asp-validation-for="Calendar.totalFat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.saturatedFat" class="control-label"></label>
+                <input asp-for="Calendar.saturatedFat" class="form-control" />
+                <span asp-validation-for="Calendar.saturatedFat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.transFat" class="control-label"></label>
+                <input asp-for="Calendar.transFat" class="form-control" />
+                <span asp-validation-for="Calendar.transFat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.monoUnsatFat" class="control-label"></label>
+                <input asp-for="Calendar.monoUnsatFat" class="form-control" />
+                <span asp-validation-for="Calendar.monoUnsatFat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.polyUnsatFat" class="control-label"></label>
+                <input asp-for="Calendar.polyUnsatFat" class="form-control" />
+                <span asp-validation-for="Calendar.polyUnsatFat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.omega_3" class="control-label"></label>
+                <input asp-for="Calendar.omega_3" class="form-control" />
+                <span asp-validation-for="Calendar.omega_3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.omega_6" class="control-label"></label>
+                <input asp-for="Calendar.omega_6" class="form-control" />
+                <span asp-validation-for="Calendar.omega_6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.cholesterol" class="control-label"></label>
+                <input asp-for="Calendar.cholesterol" class="form-control" />
+                <span asp-validation-for="Calendar.cholesterol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.totalCarb" class="control-label"></label>
+                <input asp-for="Calendar.totalCarb" class="form-control" />
+                <span asp-validation-for="Calendar.totalCarb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.dietaryFiber" class="control-label"></label>
+                <input asp-for="Calendar.dietaryFiber" class="form-control" />
+                <span asp-validation-for="Calendar.dietaryFiber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.sugar" class="control-label"></label>
+                <input asp-for="Calendar.sugar" class="form-control" />
+                <span asp-validation-for="Calendar.sugar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.protein" class="control-label"></label>
+                <input asp-for="Calendar.protein" class="form-control" />
+                <span asp-validation-for="Calendar.protein" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.procedure" class="control-label"></label>
+                <input asp-for="Calendar.procedure" class="form-control" />
+                <span asp-validation-for="Calendar.procedure" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.rotation" class="control-label"></label>
+                <input asp-for="Calendar.rotation" class="form-control" />
+                <span asp-validation-for="Calendar.rotation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.day" class="control-label"></label>
+                <input asp-for="Calendar.day" class="form-control" />
+                <span asp-validation-for="Calendar.day" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calendar.mealId" class="control-label"></label>
+                <input asp-for="Calendar.mealId" class="form-control" />
+                <span asp-validation-for="Calendar.mealId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

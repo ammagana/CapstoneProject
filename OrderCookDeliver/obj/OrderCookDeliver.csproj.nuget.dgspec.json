@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {}
+    "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {
+    "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+        "projectUniqueName": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
         "projectName": "OrderCookDeliver",
-        "projectPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
-        "packagesPath": "C:\\Users\\GrimDino\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GrimDino\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
+        "projectPath": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\OrderCookDeliver.csproj",
+        "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Armando\\source\\repos\\OrderCookDeliver\\OrderCookDeliver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\GrimDino\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -41,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -58,6 +63,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

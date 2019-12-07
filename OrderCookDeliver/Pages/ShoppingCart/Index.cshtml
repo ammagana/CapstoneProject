@@ -1,0 +1,141 @@
+﻿@page
+@model OrderCookDeliver.Pages.ShoppingCart.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@{
+    decimal subtotal = 0;
+    decimal tax = 0;
+    var ordered = "";
+    var qtyOrder = "";
+}
+<h1>Shopping Cart</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cart[0].Meal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cart[0].Price) (each)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cart[0].Serving)
+            </th>
+            <th>Meal Total</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cart[0].PickupDay)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Cart != null)
+        {
+            @foreach (var item in Model.Cart)
+            {
+                ordered = ordered + "/" + item.Meal;
+                qtyOrder = qtyOrder + "/" + item.Serving;
+                <tr>
+                    <td name="meal">
+                        @Html.DisplayFor(modelItem => item.Meal)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Serving)
+                    </td>
+                    <td>
+                        @(item.Price * item.Serving)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PickupDay)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+             }
+        }
+    </tbody>
+    <tfoot>
+       @if (Model.Cart != null)
+       {
+            @foreach (var item in Model.Cart)
+            {
+                subtotal += item.Price * item.Serving;
+            }
+       }
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Subtotal</b>
+            </td>
+            <td>
+            </td>
+            <td>
+                <!-- subtotal --><b>@Math.Round(subtotal, 2)</b>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Sales Tax</b>
+            </td>
+            <td>
+            </td>
+            <td>
+                <!-- sales tax 7% -->@{ tax = subtotal * Convert.ToDecimal(0.07); } <b>@Math.Round(tax, 2)</b>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+                <b>Total</b>
+            </td>
+            <td>
+                <!-- total = subtotal + sales tax--> <b>@(Math.Round(subtotal, 2) + Math.Round(tax, 2))</b>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<form method="post">
+    <b>Select Pickup Location:</b>
+    <select name="pickupLocation">
+        <option>University of Memphis, Main Campus</option>
+        <option>University of Memphis, Kemmons Wilson Culinary Institute</option>
+    </select>
+    <br />
+    <br />
+    <b>Select Pickup Time</b>
+    <select name="pickupTime">
+        <option>5:00pm - 6:00pm</option>
+        <option>6:00pm - 7:00pm</option>
+    </select>
+    <br />
+    <br />
+    <input type="text" value="@qtyOrder" name="qtyOrder" hidden />
+    <input type="text" value="@ordered" name="ordered" hidden />
+    <input type="submit" class="btn btn-success" value="Checkout" />
+    <a asp-page="../Menu" class="btn btn-primary">Back to Menu</a>
+</form>
+

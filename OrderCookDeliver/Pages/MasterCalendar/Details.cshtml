@@ -1,0 +1,248 @@
+﻿@page
+@model OrderCookDeliver.Pages.MasterCalendar.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Meal</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.mealName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.mealName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.preparationTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.preparationTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.pricePerServg)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.pricePerServg)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_4)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_4)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_5)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_5)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_6)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_6)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_7)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_7)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_8)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_8)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_9)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_9)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_10)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_10)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_11)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_11)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_12)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_12)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_13)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_13)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_14)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_14)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_15)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_15)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_16)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_16)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.ingredient_17)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.ingredient_17)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.calPerServg)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.calPerServg)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.totalFat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.totalFat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.saturatedFat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.saturatedFat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.transFat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.transFat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.monoUnsatFat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.monoUnsatFat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.polyUnsatFat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.polyUnsatFat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.omega_3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.omega_3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.omega_6)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.omega_6)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.cholesterol)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.cholesterol)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.totalCarb)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.totalCarb)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.dietaryFiber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.dietaryFiber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.sugar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.sugar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.protein)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.protein)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.procedure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.procedure)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.rotation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.rotation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.day)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.day)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calendar.mealId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calendar.mealId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Calendar.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
